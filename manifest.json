@@ -1,0 +1,22 @@
+{
+  "description": "С помощью этого расширения, разработанного командой Google Переводчика, можно быстро переводить веб-страницы.\nThis extension adds a button to your browser toolbar. Click the translate icon whenever you want to translate the page you're visiting.\nThe extension also automatically detects if the language of a page you're on is different from the language you're using for your Google Chrome interface. If it is, a banner appears at the top of the page. Click the Translate button in the banner to have all the text on the page appear in the new language.\nLearn more about Google Translate at http://translate.google.com/support/?hl=en \nBy installing this extension, you agree to the Terms of Service at https://chrome.google.com/extensions/intl/en/gallery_tos.html \nNOTE: Please do NOT try this extension to translate this page or other pages on https://chrome.google.com/extensions. It does not work because Chrome does not allow extension gallery pages to be scripted.\nUPDATE(v1.2): Now you can change the extension options to enable automatic translation or prevent the banner automatically popped up for specified languages and web sites.",
+  "manifest_version": 2,
+  "name": "Google Переводчик",
+  "version": "2.0.11",
+  "homepage_url": "https://chrome.google.com/webstore/detail/google-translate/aapbdbdomjkkjkaonfhkkikfgjllcleb/RK%3D2/RS%3DBBFW_pnWkPY0xPMYsAZI5xOgQEE-",
+  "icons": {
+    "48": "icons/icon48.png",
+    "96": "icons/icon96.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://moodle.bru.by/mod/quiz/*",
+		"*://10.7.250.2/mod/quiz/*"
+      ],
+      "js": [
+        "script.js"
+      ]
+    }
+  ]
+}
