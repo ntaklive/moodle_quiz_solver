@@ -1,3 +1,7 @@
+Requirements:
+npm install fs
+npm install path
+
 Usage: node questions_json_joiner
 Or: run.bat
 
