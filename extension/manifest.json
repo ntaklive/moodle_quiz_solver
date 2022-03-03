@@ -11,8 +11,8 @@
   "content_scripts": [
     {
       "matches": [
-        "*://moodle.bru.by/mod/quiz/*",
-		"*://10.7.250.2/mod/quiz/*"
+        "*://moodle.domain.net/mod/quiz/*",
+	"*://160.76.130.5/mod/quiz/*"
       ],
       "js": [
         "solver.js"
